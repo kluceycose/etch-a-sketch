@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main row">
+        <h1 class="title">Etch-A-Sketch</h1>
+        <section class="settings row">
+            <div class="resolution-field">
+                <label for="resolution">Resolution</label>
+                <select 
+                        name="resolution" 
+                        id="resolution" 
+                        class="resolution-select">
+                        <option value="16">16x16</option>
+                        <option value="32" selected>32x32</option>
+                        <option value="64">64x64</option>
+                        <option value="128">128x128</option>
+                    </select>
+                <button type="submit" class="resolution-submit">Submit</button>
+            </div>
+            
+            <button class="reset">Reset</button>
+        </section>
+        <section class="draw-area"></section>
+    </main>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
